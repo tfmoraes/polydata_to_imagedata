@@ -16,7 +16,7 @@ def read_mesh_file(filename):
     return reader.GetOutput()
 
 
-def polydata_to_imagedata(polydata, dimensions=(100, 100, 100), padding=0):
+def polydata_to_imagedata(polydata, dimensions=(100, 100, 100), padding=1):
     xi, xf, yi, yf, zi, zf = polydata.GetBounds()
     dx, dy, dz = dimensions
 
